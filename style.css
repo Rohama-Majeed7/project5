@@ -52,7 +52,7 @@ body {
   left: 0;
   transform: translateX(0%);
   background: #ffffff;
-  width: 50%;
+  width: 40%;
   height: 50%;
   transition: all 1s linear;
 }
