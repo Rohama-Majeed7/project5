@@ -11,6 +11,7 @@ html {
 }
 body {
   font-family: sans-serif;
+  font-size: 20px;
 }
 .section-center {
   width: 90vw;
@@ -30,7 +31,6 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .nav-links {
   display: none;
@@ -127,7 +127,7 @@ body {
 }
 .about-info {
   color: #333333;
-  padding: 0 0.3rem;
+  padding: 0 0.5rem;
 }
 /* end of about */
 /* industries */
@@ -217,6 +217,7 @@ body {
     &::after {
       transform: scale(1.05);
       opacity: 0.9;
+      filter: brightness(50%);
     }
   }
 }
@@ -234,11 +235,10 @@ body {
 .footer-center {
   display: grid;
   align-items: center;
+  justify-items: center;
 }
 .foot-logo {
   position: relative;
-  display: flex;
-  align-items: center;
 }
 .foot-logo span {
   color: #1f8c5a;
@@ -269,24 +269,15 @@ body {
 .social-links ul li a {
   font-weight: bold;
 }
-.fixed-text {
-  position: absolute;
-  right: 20px;
-  bottom: 0;
-  color: #c1c1c1;
-}
-.icon {
-  position: fixed;
-  bottom: 40px;
-  right: 20px;
-  font-size: 2.5rem;
-}
 /* end of footer */
 @media screen and (min-width: 850px) {
   .section-center {
     width: 100vw;
   }
-  .industry-center{
+  .navbar {
+    margin-left: 4rem;
+  }
+  .industry-center {
     grid-template-rows: 300px 300px;
   }
   .nav-links {
@@ -295,6 +286,8 @@ body {
   .nav-link {
     display: flex;
     gap: 2rem;
+    justify-content: center;
+    align-items: center;
   }
   .btn {
     display: none;
@@ -313,6 +306,7 @@ body {
   .footer-center {
     grid-template-columns: 400px 1fr;
     gap: 2.5rem;
+    justify-items: left;
   }
   .footer {
     padding: 3rem;
@@ -320,6 +314,8 @@ body {
   .foot-logo span {
     font-weight: bolder;
     font-size: 2.5rem;
+    left: 100px;
+    white-space: nowrap;
   }
   .card1 {
     grid-column: 1/3;
