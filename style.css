@@ -97,7 +97,8 @@ body {
   display: grid;
   height: 100vh;
   place-items: center;
-  background-image:linear-gradient(rgba(0, 0, 0, 0.721),rgba(0, 0, 0, 0.455)), url("./images/hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.721), rgba(0, 0, 0, 0.455)),
+    url("./images/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -280,6 +281,7 @@ body {
     gap: 2rem;
     justify-content: center;
     align-items: center;
+    margin-left: 4rem;
   }
   .btn {
     display: none;
