@@ -97,7 +97,7 @@ body {
   display: grid;
   height: calc(100vh - 80px);
   place-items: center;
-  background-image: url("./images/hero.jpg");
+  background-image:linear-gradient(rgba(0, 0, 0, 0.721),rgba(0, 0, 0, 0.455)), url("./images/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -141,19 +141,6 @@ body {
   flex-direction: column;
   gap: 0.3rem;
 }
-.card-photo {
-  position: relative;
-  top: 0;
-  left: 0;
-  transition: all 0.5s linear;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.card-photo:hover {
-  top: -10px;
-  left: 5px;
-}
 .tag {
   position: absolute;
   bottom: 0;
@@ -178,23 +165,28 @@ body {
   background-repeat: no-repeat;
 }
 .card1 {
-  background-image: url("./images/infa-1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.721), rgba(0, 0, 0, 0.455)),
+    url("./images/infa-1.jpg");
   grid-column: 1/-1;
 }
 .card2 {
-  background-image: url("./images/water.avif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.721), rgba(0, 0, 0, 0.455)),
+    url("./images/water.avif");
   grid-column: 1/3;
 }
 .card3 {
-  background-image: url("./images/energy.avif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.721), rgba(0, 0, 0, 0.455)),
+    url("./images/energy.avif");
   grid-column: 3/-1;
 }
 .card4 {
-  background-image: url("./images/archi.jfif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.721), rgba(0, 0, 0, 0.455)),
+    url("./images/archi.jfif");
   grid-column: 1/3;
 }
 .card5 {
-  background-image: url("./images/no.jfif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.721), rgba(0, 0, 0, 0.455)),
+    url("./images/no.jfif");
   grid-column: 3/-1;
 }
 .card {
