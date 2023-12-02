@@ -6,6 +6,9 @@
   text-decoration: none;
   list-style: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: sans-serif;
 }
@@ -26,12 +29,14 @@ body {
 .nav-links {
   display: none;
 }
-.nav-link li a {
-  color: black;
+.nav-link li a,
+.side-link li a {
+  color: #333333;
   padding: 10px 20px;
   border-radius: 10px;
 }
-.nav-link li a:hover {
+.nav-link li a:hover,
+.side-link li a:hover {
   background: #f800009c;
   color: #ffffff;
 }
@@ -46,11 +51,21 @@ body {
   top: 0;
   left: 0;
   transform: translateX(0%);
+  background: #ffffff;
+  width: 30%;
+  height: 50%;
+  transition: all 1s linear;
 }
 .side-link {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-direction: column;
+  padding: 0.5rem;
+  margin-top: 3rem;
+  margin-left: 0.5rem;
+}
+.side-link ul li a {
+  color: #333333;
 }
 .nav-header {
   display: flex;
@@ -97,11 +112,14 @@ body {
   color: #918989;
   font-weight: bold;
 }
+.about-info {
+  color: #333333;
+}
 /* end of about */
 /* industries */
 .paras {
   margin: 2rem 0;
-  color: black;
+  color: #333333;
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
@@ -143,7 +161,7 @@ body {
 /* end of contact */
 /* footer */
 .footer {
-  padding: 2rem;
+  position: relative;
 }
 .footer-center {
   display: grid;
@@ -156,7 +174,7 @@ body {
 }
 .foot-logo span {
   color: #1f8c5a;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bolder;
   white-space: nowrap;
 }
@@ -166,6 +184,7 @@ body {
 .links {
   display: flex;
   gap: 2rem;
+  margin-bottom: 2.5rem;
 }
 .foot-links ul,
 .social-links ul {
@@ -175,10 +194,22 @@ body {
 }
 .foot-links ul li a,
 .social-links ul li a {
-  color: black;
+  color: #404040;
 }
 .social-links ul li a {
   font-weight: bold;
+}
+.fixed-text {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  color: #c1c1c1;
+}
+.icon {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  font-size: 2.5rem;
 }
 /* end of footer */
 @media screen and (min-width: 850px) {
@@ -215,5 +246,12 @@ body {
   }
   .footer-center {
     grid-template-columns: 1fr 1fr;
+  }
+  .footer {
+    padding: 3rem;
+  }
+  .foot-logo span {
+    font-weight: bolder;
+    font-size: 2.5rem;
   }
 }
