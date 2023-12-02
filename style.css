@@ -127,7 +127,7 @@ body {
 }
 .about-info {
   color: #333333;
-  margin: 0 0.5rem;
+  padding: 0 0.3rem;
 }
 /* end of about */
 /* industries */
@@ -211,7 +211,6 @@ body {
     transition: transform 0.4s ease-in-out;
   }
 }
-
 .card {
   &:focus,
   &:hover {
@@ -285,7 +284,10 @@ body {
 /* end of footer */
 @media screen and (min-width: 850px) {
   .section-center {
-    width: 90vw;
+    width: 100vw;
+  }
+  .industry-center{
+    grid-template-rows: 300px 300px;
   }
   .nav-links {
     display: block;
