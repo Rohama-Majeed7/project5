@@ -263,7 +263,7 @@ body {
   font-weight: bold;
 }
 /* end of footer */
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 900px) {
   .section-center {
     width: 100vw;
   }
