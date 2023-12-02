@@ -95,7 +95,7 @@ body {
 /* hero */
 .hero {
   display: grid;
-  height: calc(100vh - 80px);
+  height: 100vh;
   place-items: center;
   background-image:linear-gradient(rgba(0, 0, 0, 0.721),rgba(0, 0, 0, 0.455)), url("./images/hero.jpg");
   background-position: center;
