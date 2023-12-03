@@ -258,12 +258,12 @@ body {
 .article2 .links {
   justify-content: center;
 }
-.social-links {
+.social-icons{
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.social-links i {
+.social-icons i {
   background-color: #a6cb5f;
   color: #ffffff;
   font-size: 1.5rem;
@@ -307,11 +307,6 @@ body {
   .tag {
     font-size: 11px;
   }
-  .article1 {
-    flex-direction: column;
-    gap: 2rem;
-    justify-items: center;
-  }
   .about-img {
     display: none;
   }
@@ -321,6 +316,10 @@ body {
   }
   .about-info {
     padding: 0;
+  }
+  .article1{
+    flex-direction: column;
+    gap: 2rem;
   }
 }
 /* end of footer */
