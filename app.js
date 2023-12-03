@@ -37,10 +37,8 @@ ScrollReveal().reveal(".about-img", { delay: 100 }, { origin: "left" });
 document.addEventListener("DOMContentLoaded", function () {
   const images = [
     "./images/hero.jpg",
-    "./images/a.jpg",
-    "./images/b.jpg",
-    "./images/c.jpg",
-    "./images/d.jpg",
+    "./images/skyline2.jpg",
+    "./images/skyline3.jpg",
   ]; // Add more image URLs as needed
   const hero = document.querySelector(".hero");
   let currentIndex = 0;
@@ -51,12 +49,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function updateBackground() {
-    hero.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.721), rgba(0, 0, 0, 0.455)),
-   url(${images[currentIndex]})`;
+    hero.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.721), rgba(0, 0, 0, 0.455)), url(${images[currentIndex]})`;
+    hero.style.backgroundPosition = "100% 50%";
+    // Trigger reflow to restart the transition
+    void hero.offsetWidth;
+    hero.style.backgroundPosition = "0% 50%";
   }
 
-  hero.addEventListener("transitionend", function () {
-    hero.style.backgroundImage = `url(${images[currentIndex]})`;
-  });
-  setInterval(nextSlide, 6000); // Change background every 3 seconds (adjust as needed)
+  setInterval(nextSlide, 6000); // Change background every 6 seconds (adjust as needed)
 });
