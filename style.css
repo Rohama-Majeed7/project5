@@ -146,16 +146,17 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #1f8c5a;
   color: white;
   padding: 0.5rem;
   z-index: 1;
+  white-space: nowrap;
+  font-size: 1rem;
 }
 .industry-center {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 300px 300px 300px;
-  gap: 0.5rem;
+  gap: 0.2rem;
 }
 .card {
   position: relative;
@@ -164,6 +165,7 @@ body {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  transition: background 1s linear;
 }
 .card1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.721), rgba(0, 0, 0, 0.455)),
@@ -272,6 +274,10 @@ body {
   }
   .industry-center {
     grid-template-rows: 300px 300px;
+    gap: 0.6rem;
+  }
+  .tag {
+    font-size: 1.7rem;
   }
   .nav-links {
     display: block;
