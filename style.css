@@ -105,6 +105,7 @@ body {
   text-align: center;
   color: #ffffff;
   font-size: 2rem;
+  transition: background-image 2s linear;
 }
 /* end of hero */
 /* about */
