@@ -31,8 +31,8 @@ ScrollReveal({
   duration: 2500,
   easing: "ease-in-out",
 });
-ScrollReveal().reveal(".about-info", { delay: 100, origin: "right" });
-ScrollReveal().reveal(".about-img", { delay: 100, origin: "left" });
+ScrollReveal().reveal(".about-info", { delay: 100 }, { origin: "right" });
+ScrollReveal().reveal(".about-img", { delay: 100}, {origin: "left" });
 // ========================= //
 document.addEventListener("DOMContentLoaded", function () {
   const images = [
