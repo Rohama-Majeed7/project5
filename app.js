@@ -51,10 +51,9 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateBackground() {
     hero.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.721), rgba(0, 0, 0, 0.455)), url(${images[currentIndex]})`;
     hero.style.backgroundPosition = "100% 50%";
-    // Trigger reflow to restart the transition
     void hero.offsetWidth;
     hero.style.backgroundPosition = "0% 50%";
   }
 
-  setInterval(nextSlide, 6000); // Change background every 6 seconds (adjust as needed)
+  setInterval(nextSlide, 6000);
 });
