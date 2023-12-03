@@ -108,9 +108,11 @@ body {
 }
 /* end of hero */
 /* about */
+.about {
+  background: url("./images/aboutbg.jpg");
+}
 .title {
   padding: 2rem;
-  background-color: #f2f3f5;
   color: #1f8c5a;
   text-align: center;
 }
@@ -123,12 +125,18 @@ body {
 }
 .highlight {
   font-size: 2rem;
-  color: #918989;
+  color: #ffffff;
   font-weight: bold;
 }
 .about-info {
-  color: #333333;
+  color: #ffffff;
   padding: 0 0.5rem;
+}
+.about-info .title {
+  color: #ffffff;
+  text-align: left;
+  margin: 1rem 0;
+  padding: 0;
 }
 /* end of about */
 /* industries */
@@ -147,10 +155,10 @@ body {
   bottom: 0;
   left: 0;
   color: white;
-  padding: 0.5rem;
   z-index: 1;
   white-space: nowrap;
   font-size: 1rem;
+  padding: 0.5rem;
 }
 .industry-center {
   display: grid;
@@ -235,14 +243,11 @@ body {
 }
 .article1 {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
 }
 .social-links {
   display: flex;
   align-items: center;
   gap: 1rem;
-  
 }
 .social-links i {
   background-color: #a6cb5f;
@@ -280,6 +285,20 @@ body {
 .social-links ul li a {
   font-weight: bold;
 }
+.copy-right {
+  text-align: center;
+  margin: 1rem 0;
+}
+@media screen and (max-width: 500px) {
+  .tag {
+    font-size: 11px;
+  }
+  .article1 {
+    flex-direction: column;
+    gap: 2rem;
+    justify-items: center;
+  }
+}
 /* end of footer */
 @media screen and (min-width: 900px) {
   .section-center {
@@ -293,7 +312,7 @@ body {
     gap: 0.6rem;
   }
   .tag {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   .nav-links {
     display: block;
@@ -320,7 +339,9 @@ body {
   .card5 {
     grid-column: 2/-1;
   }
-  .footer-center {
+  .article1 {
+    flex-direction: row;
+    justify-content: space-between;
   }
   .footer {
     padding: 3rem;
@@ -345,5 +366,8 @@ body {
   }
   .card5 {
     grid-column: 3/-1;
+  }
+  .copy-right {
+    text-align: left;
   }
 }
