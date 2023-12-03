@@ -50,9 +50,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function updateBackground() {
     hero.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.721), rgba(0, 0, 0, 0.455)), url(${images[currentIndex]})`;
-    hero.style.backgroundPosition = "100% 50%";
+    hero.style.backgroundPosition = "0% 0%";
     void hero.offsetWidth;
-    hero.style.backgroundPosition = "0% 50%";
+    hero.style.backgroundPosition = "50% 50%";
   }
 
   setInterval(nextSlide, 6000);
