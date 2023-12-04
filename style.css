@@ -492,13 +492,14 @@ body {
     font-size: 15px;
   }
   .tag {
-    font-size: 11px;
+    font-size: 14px;
   }
   .about-img {
     display: none;
   }
   .about-center {
-    padding: 0.5rem;
+    padding: 0.6rem;
+    width: 100vw;
   }
   .about-info {
     padding: 0;
