@@ -500,6 +500,7 @@ body {
   .about-center {
     padding: 0.6rem;
     width: 100vw;
+    margin: 0 0.3rem;
   }
   .about-info {
     padding: 0;
