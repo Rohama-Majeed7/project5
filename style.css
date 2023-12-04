@@ -490,7 +490,7 @@ body {
     font-size: 15px;
   }
   .about {
-    height: 100vh;
+    min-height: 100vh;
   }
   .title-text {
     margin: 0;
@@ -510,8 +510,8 @@ body {
   }
   .about-info {
     padding: 0;
-    line-height: 1.5;
-    font-size: 1.1rem;
+    /* line-height: 1.5; */
+    font-size: 1.2rem;
   }
   .article1 {
     justify-content: space-between;
