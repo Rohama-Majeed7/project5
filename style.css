@@ -288,7 +288,7 @@ body {
 }
 .highlight {
   font-size: 2rem;
-  color: rgb(44, 42, 42);
+  color: rgb(39, 39, 39);
   font-weight: bold;
 }
 .about-info {
@@ -489,6 +489,15 @@ body {
 @media screen and (max-width: 500px) {
   body {
     font-size: 15px;
+  }
+  .about {
+    height: 100vh;
+  }
+  .title-text {
+    margin: 0;
+  }
+  .highlight {
+    font-size: 1.5rem;
   }
   .tag {
     font-size: 14px;
