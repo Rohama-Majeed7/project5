@@ -29,13 +29,17 @@ links.forEach((link) => {
   });
 });
 // ============================= //
-let currentSlide = 0;
-function showNextSlide() {
-  const slider = document.getElementById("slider");
-  const slides = document.getElementsByClassName("slide");
-  currentSlide = (currentSlide + 1) % slides.length;
-  const offset = -currentSlide * 100 + "%";
-  slider.style.transform = "translateX(" + offset + ")";
-  setTimeout(showNextSlide, 2000); // Change slide every 2 seconds
+const slider = document.querySelector(".slider");
+let slideIndex = 0;
+
+function nextSlide() {
+  slideIndex = (slideIndex + 1) % slider.children.length;
+  updateSlider();
 }
-showNextSlide();
+
+function updateSlider() {
+  const translateValue = -slideIndex * 100 + "%";
+  slider.style.transform = "translateX(" + translateValue + ")";
+}
+
+setInterval(nextSlide, 3000); // Change slide every 3 seconds (adjust as needed)
