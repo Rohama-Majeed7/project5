@@ -42,5 +42,6 @@ function updateSlider() {
   slider.style.transform = "translateX(" + translateValue + ")";
 }
 
-setInterval(nextSlide, 3000); // Change slide every 3 seconds (adjust as needed)
+setInterval(nextSlide, 8000); // Change slide every 3 seconds (adjust as needed)
 // ==================================//
+
